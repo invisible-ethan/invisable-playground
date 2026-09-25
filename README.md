@@ -31,3 +31,17 @@ Any slot without an id shows a dashed placeholder, so the page works before your
 Put `<div data-ad-slot-name="yourname"></div>` anywhere in the page, then add a `yourname` entry to `slots` in `src/ads.ts` and a matching `VITE_ADSENSE_SLOT_YOURNAME` variable.
 
 Ads only serve on a real domain approved in your AdSense account, not on `localhost`.
+
+## EU/UK/Swiss consent (required by Google)
+
+Google requires a certified consent management platform (CMP) that integrates with the IAB TCF to serve personalized ads to visitors in the EEA, the UK and Switzerland ([details](https://support.google.com/adsense/answer/13554116)).
+
+The simplest certified CMP is Google's own, configured in your AdSense account. It is delivered through the AdSense script already on every page, so no extra code is needed:
+
+1. In AdSense, go to **Privacy & messaging > European regulations** and create a message.
+2. Select this site's domain, choose the consent options you want, and **Publish** it.
+
+The app already includes the pieces that go with it:
+
+- `privacy.html`, a privacy policy with the cookie disclosures AdSense requires. Edit it to describe your site.
+- A "Privacy & cookie settings" link in the footer (and on the privacy page) that reopens the consent message. It stays hidden until Google's consent script loads.

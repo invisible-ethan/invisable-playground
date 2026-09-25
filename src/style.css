@@ -38,3 +38,15 @@ body {
   text-align: center;
   padding: 8px;
 }
+
+footer {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  font-size: 0.85rem;
+}
+
+.prose {
+  max-width: 70ch;
+  line-height: 1.6;
+}

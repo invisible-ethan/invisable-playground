@@ -43,6 +43,14 @@ export default defineConfig(({ mode }) => {
   const client = env.VITE_ADSENSE_CLIENT || DEFAULT_ADSENSE_CLIENT;
   return {
     plugins: [adsense(client)],
+    build: {
+      rollupOptions: {
+        input: {
+          main: 'index.html',
+          privacy: 'privacy.html',
+        },
+      },
+    },
     define: {
       'import.meta.env.VITE_ADSENSE_CLIENT': JSON.stringify(client),
     },
