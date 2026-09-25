@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to play · Elevator Action Remake</title>
+    <meta name="description" content="Controls, rules and scoring for the Elevator Action Remake: elevators, escalators, red doors, enemies, lamps and the alarm." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- site-header -->
+    <main class="prose">
+      <h1>How to play</h1>
+      <p>Your goal in each building is simple: start on the roof, collect the document behind every red door, and reach the getaway car in the basement. Here is everything you need to know to get there.</p>
+
+      <h2>Controls</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Keyboard</th><th>Gamepad</th></tr></thead>
+          <tbody>
+            <tr><td>Walk</td><td>← → (or A / D)</td><td>D-pad or stick</td></tr>
+            <tr><td>Ride an elevator up or down</td><td>↑ ↓ inside the car</td><td>D-pad or stick</td></tr>
+            <tr><td>Duck</td><td>↓</td><td>D-pad down</td></tr>
+            <tr><td>Enter a red door</td><td>↑ in front of it</td><td>D-pad up</td></tr>
+            <tr><td>Step onto an escalator</td><td>↓ at the top, ↑ at the bottom</td><td>D-pad</td></tr>
+            <tr><td>Fire</td><td>Z (or J / Space)</td><td>A / X</td></tr>
+            <tr><td>Jump or jump-kick</td><td>X (or K)</td><td>B / Y</td></tr>
+            <tr><td>Start</td><td>Enter</td><td>Start</td></tr>
+            <tr><td>Pause</td><td>P / Esc</td><td>Select</td></tr>
+            <tr><td>Mute</td><td>M</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>On phones and tablets, touch buttons appear on screen automatically.</p>
+
+      <h2>Getting around the building</h2>
+      <h3>Elevators</h3>
+      <p>Walk into an elevator car when it is level with your floor, then hold up or down to drive it. The car always comes to rest level with a floor, so you can't get stuck between two. You can also step onto the roof of a car and ride on top of it, but watch the top of the shaft: a car that carries you up into it will crush you.</p>
+      <h3>Empty shafts</h3>
+      <p>If you walk into a shaft when the car isn't there, you fall. A drop of about one floor, onto a car roof or the bottom of the shaft, is survivable. Anything further is not. The bottom of a shaft is solid ground, but it's a bad place to stand when a car is coming down.</p>
+      <p>You can also jump across an empty shaft. Take off right at the edge and you'll make it, even if you land a few pixels short. Take off too early and you'll drop down the shaft instead. A car standing at your floor blocks the jump.</p>
+      <h3>Escalators</h3>
+      <p>On the lower floors, escalators link one elevator shaft to the next. Press down at the top of an escalator, or up at the bottom, to step on.</p>
+
+      <h2>Enemies</h2>
+      <p>Enemy agents step out of the blue doors. Each shot they fire is either high or low: duck under a high shot, jump over a low one. You have four ways to take them out, and some pay better than others.</p>
+
+      <h2>Scoring</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Points</th></tr></thead>
+          <tbody>
+            <tr><td>Shoot an enemy</td><td>100</td></tr>
+            <tr><td>Jump-kick an enemy</td><td>150</td></tr>
+            <tr><td>Drop a ceiling lamp on an enemy</td><td>150</td></tr>
+            <tr><td>Crush an enemy under a descending elevator</td><td>300</td></tr>
+            <tr><td>Collect a document from a red door</td><td>500</td></tr>
+            <tr><td>Clear a building</td><td>1,000 × level number</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>You earn an extra life at 10,000 points, then another every 20,000 points after that.</p>
+
+      <h2>Lamps and blackouts</h2>
+      <p>Jump and fire at a ceiling lamp to shoot it down. The building goes dark for a moment: every character becomes a silhouette and enemies have a hard time aiming at you. If an enemy is standing underneath when the lamp falls, it takes them out too.</p>
+
+      <h2>The alarm</h2>
+      <p>Take too long in a building and the alarm sounds. From then on enemies spawn faster, move faster and shoot more often, so keep moving.</p>
+
+      <h2>Missed documents</h2>
+      <p>Every red door holds a document, and you need all of them. If you reach the basement with any left, you're sent back up to the highest red door you missed.</p>
+
+      <p>Ready? <a href="%GAME_URL%">Start playing</a>, or read the <a href="/tips.html">tips and strategy guide</a> first.</p>
+    </main>
+    <!-- site-footer -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

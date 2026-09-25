@@ -3,17 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About · Invisable Playground</title>
-    <meta name="description" content="Who runs Invisable Playground and what the site is for." />
+    <title>About · Elevator Action Remake</title>
+    <meta name="description" content="About the Elevator Action Remake, a non-commercial fan project that recreates the 1983 arcade game in the browser." />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <!-- site-header -->
     <main class="prose">
-      <h1>About</h1>
-      <p>Invisable Playground is an independent website. Replace this paragraph with who runs the site, what it covers, and why visitors should trust it.</p>
-      <p>Questions or feedback are welcome on the <a href="/contact.html">contact page</a>.</p>
+      <h1>About this project</h1>
+      <p>Elevator Action Remake is an unofficial fan remake of the 1983 arcade game Elevator Action. It was made for learning and for fun, by a fan who wanted to play it again in a browser, on any device, without an emulator.</p>
+
+      <h2>How it was made</h2>
+      <p>The game is written from scratch in TypeScript. It uses no game framework, just a small engine built on the browser's Canvas 2D API, and it runs at the arcade's native 256×224 resolution. All of the artwork is original pixel art, and every sound effect is generated in code with the Web Audio API.</p>
+      <p>The game logic is kept separate from the drawing code so it can be tested on its own. Automated tests check that every generated building can be completed, across hundreds of different layouts, and play thousands of random inputs through the game looking for bugs.</p>
+
+      <h2>The original game</h2>
+      <p>Elevator Action was released by Taito in 1983. It stood out among arcade games of its time for letting the player control the elevators directly and for its tense, stealthy pace. This remake aims to recreate how it plays, not to copy it: it uses none of the original code, graphics or sound.</p>
+
+      <h2>Credits</h2>
+      <p>Elevator Action is © 1983 Taito Corporation. This site and the remake are not affiliated with or endorsed by Taito.</p>
+
+      <p>Questions, bug reports or feedback are welcome on the <a href="/contact.html">contact page</a>.</p>
     </main>
     <!-- site-footer -->
     <script type="module" src="/src/main.ts"></script>

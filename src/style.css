@@ -12,13 +12,21 @@ body {
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 16px;
+}
+
+.layout aside {
+  width: 300px;
 }
 
 @media (max-width: 720px) {
   .layout {
     grid-template-columns: 1fr;
+  }
+
+  .layout aside {
+    width: auto;
   }
 }
 
@@ -79,4 +87,63 @@ a {
 .prose {
   max-width: 70ch;
   line-height: 1.6;
+}
+
+.lede {
+  font-size: 1.15rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 12px;
+  border-radius: 6px;
+  background: #c62828;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+figure {
+  margin: 24px 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  border-radius: 4px;
+}
+
+figcaption {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid #e2e2e2;
 }

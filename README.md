@@ -1,6 +1,8 @@
-# Invisable Playground
+# Elevator Action Remake: introduction site
 
-A minimal Vite + TypeScript web app with Google AdSense wired in.
+The introduction site for the [Elevator Action web remake](https://github.com/invisible-ethan/elevator-action-playground): home page, how to play, tips, about, contact, privacy and terms. It's a Vite + TypeScript static site with Google AdSense wired in.
+
+Set `VITE_GAME_URL` to where the game is deployed. Until then, the Play buttons link to the game's GitHub repository.
 
 ## Run it
 
@@ -52,7 +54,7 @@ The site already has what reviewers look for structurally: clear navigation, Abo
 
 What only you can add, and what decides approval:
 
-1. **Original content.** Google rejects sites with little or no content ("low value content"). Replace the home page text with real material, and aim for a good number of substantial, original pages before applying. Add each new page to `PAGES` in `vite.config.ts`.
-2. **About and Contact details.** Edit `about.html` to say who runs the site, and set `VITE_CONTACT_EMAIL` so the contact page shows a real address.
+1. **Original content.** Google rejects sites with little or no content ("low value content"). The home, how-to-play and tips pages are written from the game's README; keep adding original pages (patch notes, guides) and add each one to `PAGES` in `vite.config.ts`.
+2. **Contact details.** Set `VITE_CONTACT_EMAIL` so the contact page shows a real address.
 3. **Your own domain.** Deploy to a domain you own, set `VITE_SITE_URL` to it, and add that site under **Sites** in AdSense.
 4. **Consent message.** Publish the European regulations message in AdSense (see above).

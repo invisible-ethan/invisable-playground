@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invisable Playground</title>
-    <meta name="description" content="Invisable Playground: replace this with a one-sentence summary of what the site offers." />
+    <title>Elevator Action Remake: play the 1983 arcade spy game in your browser</title>
+    <meta name="description" content="A free fan remake of the 1983 arcade classic Elevator Action. Ride elevators down a 30-floor building, grab the secret documents and escape. Plays in any browser with keyboard, gamepad or touch." />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
@@ -13,8 +13,51 @@
     <div data-ad-slot-name="top"></div>
     <div class="layout">
       <main class="prose">
-        <h1>Invisable Playground</h1>
-        <p>This is the home page. Replace this text with your site's own content before applying to AdSense.</p>
+        <section class="hero">
+          <h1>Elevator Action, rebuilt for the browser</h1>
+          <p class="lede">Slip onto the roof of an enemy building, work your way down 30 floors by elevator and escalator, grab the secret documents behind every red door, and race to the getaway car in the basement. No download, no plugin: it runs in any modern browser on a laptop, a phone or with a gamepad.</p>
+          <p><a class="button" href="%GAME_URL%">Play now</a> <a href="/how-to-play.html">Read the controls first</a></p>
+        </section>
+
+        <figure>
+          <img src="/screenshots/title.png" width="768" height="672" alt="The game's title screen in pixel-art style" />
+          <figcaption>The title screen, drawn at the arcade's native 256×224 resolution and scaled up with crisp pixels.</figcaption>
+        </figure>
+
+        <h2>The mission</h2>
+        <p>You are Agent 17, code name "Otto". Intelligence has located a building packed with stolen documents, and each one is locked behind a red door somewhere on its floors. You arrive the quiet way, on a zip line to the rooftop. The only way out is down, and the building's security agents know you are coming.</p>
+        <p>Every document is worth points, but it is also mandatory. Reach the basement garage with a red door still unopened and you are sent back up to the highest one you missed. Clear the building and the next one is waiting, with more red doors and sharper enemies.</p>
+
+        <div class="gallery">
+          <figure>
+            <img src="/screenshots/roof.png" width="768" height="672" loading="lazy" alt="Agent Otto landing on the rooftop at the start of a building" />
+            <figcaption>Every building starts on the roof.</figcaption>
+          </figure>
+          <figure>
+            <img src="/screenshots/gameplay.png" width="768" height="672" loading="lazy" alt="Otto riding an elevator between floors while enemy agents wait by the doors" />
+            <figcaption>Drive the elevators yourself, floor by floor.</figcaption>
+          </figure>
+          <figure>
+            <img src="/screenshots/escalator.png" width="768" height="672" loading="lazy" alt="The lower floors, where escalators link the elevator shafts" />
+            <figcaption>Lower down, escalators connect the shafts.</figcaption>
+          </figure>
+        </div>
+
+        <h2>What makes it play like the arcade</h2>
+        <ul>
+          <li><strong>You drive the elevators.</strong> Step into a car and hold up or down to move it. It always stops level with a floor, and you can ride on its roof too, as long as you don't get carried into the top of the shaft.</li>
+          <li><strong>Enemies fire high or low.</strong> Every shot has to be read and answered: duck under the high ones and jump over the low ones.</li>
+          <li><strong>The building fights back.</strong> Shoot out a ceiling lamp and the floor goes dark for a moment. Everyone becomes a silhouette and the enemy agents struggle to aim. Drop a lamp on an agent's head for bonus points.</li>
+          <li><strong>A clock you can't see.</strong> Dawdle too long and the alarm goes off. Enemies appear faster, move faster and shoot more often.</li>
+          <li><strong>A new building every time.</strong> Each level is generated from scratch, and every floor is guaranteed to be reachable from the roof.</li>
+        </ul>
+
+        <h2>Built from scratch</h2>
+        <p>This is not an emulator and it does not use any of the original game's code or graphics. It is a new program written in TypeScript with a small Canvas 2D engine, running a fixed 60 updates per second like the original hardware. Every sound effect is synthesised in the browser with the Web Audio API, so the whole game loads in a moment.</p>
+        <p>Your high score and sound setting are saved in your browser, so they're still there next time you visit.</p>
+
+        <h2>Play on anything</h2>
+        <p>The game works with a keyboard, with any standard gamepad, and with on-screen touch controls that appear automatically on phones and tablets. See <a href="/how-to-play.html">How to play</a> for the full control list and rules, or jump to the <a href="/tips.html">tips and strategy guide</a> once you've had a first run.</p>
       </main>
       <aside data-ad-slot-name="sidebar"></aside>
     </div>
