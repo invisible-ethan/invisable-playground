@@ -1,7 +1,9 @@
 import { defineConfig, loadEnv, type Plugin } from 'vite';
 
-// Injects the AdSense loader into <head> and writes ads.txt at build time,
-// but only when VITE_ADSENSE_CLIENT is set, so no publisher id lives in the repo.
+// Default AdSense publisher id; override with VITE_ADSENSE_CLIENT.
+const DEFAULT_ADSENSE_CLIENT = 'ca-pub-6470972930893111';
+
+// Injects the AdSense loader into <head> and writes ads.txt at build time.
 function adsense(client: string): Plugin {
   const pubId = client.replace(/^ca-/, '');
   return {
@@ -38,7 +40,11 @@ function adsense(client: string): Plugin {
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), 'VITE_');
+  const client = env.VITE_ADSENSE_CLIENT || DEFAULT_ADSENSE_CLIENT;
   return {
-    plugins: [adsense(env.VITE_ADSENSE_CLIENT ?? '')],
+    plugins: [adsense(client)],
+    define: {
+      'import.meta.env.VITE_ADSENSE_CLIENT': JSON.stringify(client),
+    },
   };
 });

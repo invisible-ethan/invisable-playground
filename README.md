@@ -13,13 +13,13 @@ npm run build    # production build into dist/
 ## Plug in your AdSense ids
 
 1. Copy `.env.example` to `.env`.
-2. Set `VITE_ADSENSE_CLIENT` to your publisher id (`ca-pub-...`), from AdSense > Account > Settings.
+2. The publisher id `ca-pub-6470972930893111` is the default (in `vite.config.ts`). Set `VITE_ADSENSE_CLIENT` only to use a different one.
 3. Set `VITE_ADSENSE_SLOT_TOP`, `VITE_ADSENSE_SLOT_SIDEBAR` and `VITE_ADSENSE_SLOT_BOTTOM` to ad unit ids from AdSense > Ads > By ad unit.
 4. Run `npm run build` and deploy `dist/`.
 
 On your host (Netlify, Vercel, etc.) set the same variables in its environment settings instead of a `.env` file.
 
-When `VITE_ADSENSE_CLIENT` is set, the build:
+The build:
 
 - adds the AdSense loader script and the `google-adsense-account` meta tag to `<head>` (needed for site verification),
 - writes `dist/ads.txt` for your publisher id.
