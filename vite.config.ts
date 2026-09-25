@@ -70,7 +70,7 @@ const FOOTER = `<footer class="site-footer">
     </footer>`;
 
 // Where visitors play the game. Override with VITE_GAME_URL once it's deployed.
-const DEFAULT_GAME_URL = 'https://github.com/invisible-ethan/elevator-action-playground';
+const DEFAULT_GAME_URL = 'https://elevator-action.invisable-playground.uk/';
 
 // Shares one header and footer across pages, fills in the contact email and game URL,
 // and writes robots.txt plus (when the site URL is known) sitemap.xml.

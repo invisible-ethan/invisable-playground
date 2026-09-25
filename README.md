@@ -2,7 +2,7 @@
 
 The introduction site for the [Elevator Action web remake](https://github.com/invisible-ethan/elevator-action-playground): home page, how to play, tips, about, contact, privacy and terms. It's a Vite + TypeScript static site with Google AdSense wired in.
 
-Set `VITE_GAME_URL` to where the game is deployed. Until then, the Play buttons link to the game's GitHub repository.
+The Play buttons link to https://elevator-action.invisable-playground.uk/ (override with `VITE_GAME_URL`).
 
 ## Run it
 
