@@ -50,7 +50,7 @@ function adsense(client: string): Plugin {
 }
 
 const HEADER = `<header class="site-header">
-      <a class="site-name" href="/">Elevator Action Remake</a>
+      <a class="site-name" href="/">Invisable Playground</a>
       <nav>
         <a href="/">Home</a>
         <a href="/how-to-play.html">How to play</a>
@@ -61,7 +61,7 @@ const HEADER = `<header class="site-header">
     </header>`;
 
 const FOOTER = `<footer class="site-footer">
-      <span>&copy; ${new Date().getFullYear()} Elevator Action Remake</span>
+      <span>&copy; ${new Date().getFullYear()} Invisable Playground</span>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
       <a href="/privacy.html">Privacy policy</a>

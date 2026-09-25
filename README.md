@@ -1,4 +1,4 @@
-# Elevator Action Remake: introduction site
+# Invisable Playground
 
 The introduction site for the [Elevator Action web remake](https://github.com/invisible-ethan/elevator-action-playground): home page, how to play, tips, about, contact, privacy and terms. It's a Vite + TypeScript static site with Google AdSense wired in.
 
