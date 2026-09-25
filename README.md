@@ -24,7 +24,7 @@ The build:
 - adds the AdSense loader script and the `google-adsense-account` meta tag to `<head>` (needed for site verification),
 - writes `dist/ads.txt` for your publisher id.
 
-Any slot without an id shows a dashed placeholder, so the page works before your account is approved.
+Any slot without an id shows a dashed placeholder in `npm run dev` and is removed entirely from the production build, so reviewers never see empty ad boxes.
 
 ## Adding more ad slots
 
@@ -45,3 +45,14 @@ The app already includes the pieces that go with it:
 
 - `privacy.html`, a privacy policy with the cookie disclosures AdSense requires. Edit it to describe your site.
 - A "Privacy & cookie settings" link in the footer (and on the privacy page) that reopens the consent message. It stays hidden until Google's consent script loads.
+
+## Getting through AdSense site review
+
+The site already has what reviewers look for structurally: clear navigation, About, Contact, Privacy policy and Terms of use pages on every page's footer, `ads.txt`, `robots.txt`, a `sitemap.xml` (when `VITE_SITE_URL` is set), and no empty ad boxes.
+
+What only you can add, and what decides approval:
+
+1. **Original content.** Google rejects sites with little or no content ("low value content"). Replace the home page text with real material, and aim for a good number of substantial, original pages before applying. Add each new page to `PAGES` in `vite.config.ts`.
+2. **About and Contact details.** Edit `about.html` to say who runs the site, and set `VITE_CONTACT_EMAIL` so the contact page shows a real address.
+3. **Your own domain.** Deploy to a domain you own, set `VITE_SITE_URL` to it, and add that site under **Sites** in AdSense.
+4. **Consent message.** Publish the European regulations message in AdSense (see above).
